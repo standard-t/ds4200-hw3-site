@@ -7,32 +7,37 @@
 </head>
 
 <body>
-    <h1 style="color:blue">DS4200 Visualization</h1>
-    <h3 class='A'> <i>subtitle</i></h3>
-    <p id='name'>A paragraph, my name is Tara</p>
-    <p>Today is a <b>good</b> day</p>
-
-    <button id='navigateButton'> Go to another page</button>
+    <div id="heading">
+        <h1 id="about">About Me</h1>
+        <button id='headerButton'>More Info</button>
+    </div>
+    <div id='name'>
+        <img src="https://tara-standard.netlify.app/assets/image-CRAHpDXe.jpg" />
+        <p>I am deeply passionate about creating user-centered designs and innovative digital experiences. With a strong
+            foundation in web development and design, I enjoy blending aesthetics with functionality to solve complex
+            problems and enhance user interaction. My experience with JavaScript, React.js, and Node.js fuels my
+            enthusiasm for full-stack web development, while my design expertise in tools like Figma and the Adobe
+            Design Suite allows me to create seamless, engaging interfaces that meet user needs.
+            I am particularly drawn to projects that challenge me to think critically and creatively, such as my work on
+            SkiMate, where I led the design of a mobile app for snow-sports enthusiasts. I thrive in collaborative
+            environments, as demonstrated by my experience working closely with cross-functional teams to bring ideas to
+            life, whether in product design or UX research.
+            Additionally, I have a keen interest in human-computer interaction and user experience design, as I believe
+            that well-designed interfaces can significantly improve people's lives by making technology more accessible
+            and intuitive. I am constantly eager to learn and explore new design and development techniques, striving to
+            push the boundaries of what is possible in both design and technology. Ultimately, I aim to combine my
+            technical skills with my creative instincts to build meaningful, impactful digital experiences.
+        </p>
+    </div>
     <script>
-        const navigateButton = document.getElementById('navigateButton')
+        const navigateButton = document.getElementById('headerButton')
         navigateButton.addEventListener('click', function () {
-            window.location.href = 'test.html'
+            window.location.href = 'secondpage.html'
         })
     </script>
     <br /><br />
 
-    <a href="https://www.northeastern.edu">
-        Go to northeastern website
-    </a>
-    To do list:
-    <ol class="A">
-        <li>Talk to TA</li>
-        <li>Regrade quiz</li>
-        <li>Read the paper</li>
-    </ol>
 
-    <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/362px-Cat_August_2010-4.jpg" />
 </body>
 
 </html>

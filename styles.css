@@ -1,14 +1,59 @@
 p {
     width: 800px;
-    margin: 0 auto;
+    margin: 50px;
+
 }
 
 #name {
-    background-color: brown;
-    color: aliceblue;
+    background-color: rgb(18, 90, 71);
+    color: white;
+    display: flex;
+    align-items: start;
 }
 
-.A {
-    border: 5px solid black;
-    padding: 0 10px 20px 30px;
+
+img {
+    width: 250px;
+    height: auto;
+    margin: 20px;
+}
+
+li {
+    width: 70%;
+}
+
+#heading {
+    display: flex;
+}
+
+#headerButton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    margin: 20px;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(18, 90, 71);
+    color: white;
+    border-radius: 20px;
+    border: rgb(18, 90, 71);
+}
+
+#socialButton {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin: 10px;
+    padding: 8px;
+    background-color: rgb(18, 90, 71);
+    color: white;
+    border-radius: 15px;
+    border: rgb(18, 90, 71);
+}
+
+#about {
+    margin-top: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: rgb(18, 90, 71);
+
 }
