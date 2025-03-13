@@ -9,7 +9,8 @@
 <body>
     <div id="heading">
         <h1 id="about">About Me</h1>
-        <button id='headerButton'>More Info</button>
+        <button class='headerButton' id='headerButton1'>More Info</button>
+        <button class='headerButton' id='headerButton2'>Plots</button>
     </div>
     <div id='name'>
         <img src="https://tara-standard.netlify.app/assets/image-CRAHpDXe.jpg" />
@@ -30,11 +31,16 @@
         </p>
     </div>
     <script>
-        const navigateButton = document.getElementById('headerButton')
-        navigateButton.addEventListener('click', function () {
-            window.location.href = 'secondpage.html'
+        const navigatePlotButton = document.getElementById('headerButton2')
+        navigatePlotButton.addEventListener('click', function () {
+            window.location.href = 'plots.html'
+        })
+        const navigateMoreButton = document.getElementById('headerButton1')
+        navigateMoreButton.addEventListener('click', function () {
+            window.location.href = 'moreInfo.html'
         })
     </script>
+
     <br /><br />
 
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="heading">
+        <button class="headerButton" id='headerButton5'>About Me</button>
+        <button class="headerButton" id='headerButton6'>More Info</button>
+        <h1 id="about">Plots</h1>
+    </div>
+
+    <script>
+        const navigateMoreButton = document.getElementById('headerButton6')
+        navigateMoreButton.addEventListener('click', function () {
+            window.location.href = 'moreInfo.html'
+        })
+        const navigateAboutButton = document.getElementById('headerButton5')
+        navigateAboutButton.addEventListener('click', function () {
+            window.location.href = 'aboutMe.html'
+        })
+    </script>
+
+</body>
+
+</html>

@@ -8,13 +8,18 @@
 
 <body>
     <div id="heading">
+        <button class='headerButton' id="headerButton3">About Me</button>
         <h1 id="about">More Info</h1>
-        <button id='headerButton'>About Me</button>
+        <button class='headerButton' id="headerButton4">Plots</button>
     </div>
     <script>
-        const navigateButton = document.getElementById('headerButton')
-        navigateButton.addEventListener('click', function () {
-            window.location.href = 'index.html'
+        const navigatePlotButton = document.getElementById('headerButton4')
+        navigatePlotButton.addEventListener('click', function () {
+            window.location.href = 'plots.html'
+        })
+        const navigateAboutButton = document.getElementById('headerButton3')
+        navigateAboutButton.addEventListener('click', function () {
+            window.location.href = 'aboutMe.html'
         })
     </script>
 
