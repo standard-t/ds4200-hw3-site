@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 style="color:blue">DS4200 Visualization</h1>
+    <h3 class='A'> <i>subtitle</i></h3>
+    <p id='name'>A paragraph, my name is Tara</p>
+    <p>Today is a <b>good</b> day</p>
+
+    <button id='navigateButton'> Go to another page</button>
+    <script>
+        const navigateButton = document.getElementById('navigateButton')
+        navigateButton.addEventListener('click', function () {
+            window.location.href = 'test.html'
+        })
+    </script>
+    <br /><br />
+
+    <a href="https://www.northeastern.edu">
+        Go to northeastern website
+    </a>
+    To do list:
+    <ol class="A">
+        <li>Talk to TA</li>
+        <li>Regrade quiz</li>
+        <li>Read the paper</li>
+    </ol>
+
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/362px-Cat_August_2010-4.jpg" />
+</body>
+
+</html>

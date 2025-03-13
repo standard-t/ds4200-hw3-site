@@ -1,0 +1,14 @@
+p {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#name {
+    background-color: brown;
+    color: aliceblue;
+}
+
+.A {
+    border: 5px solid black;
+    padding: 0 10px 20px 30px;
+}
