@@ -73,13 +73,18 @@ socialMedia.then(function (data) {
     };
   };
 
+  // the below line groups the data by platform and applies the rollupFunction (which takes the data from one platform 
+  // and returns the min, q1, median, q3, and max) to each group, storing the results in the quantilesByGroups constant
   const quantilesByGroups = d3.rollup(data, rollupFunction, d => d.Platform);
 
+
+  // the below line iterates over the quantilesByGroups constant and computes the x position (placement location) 
+  // and boxWidth for each box within the side-by-side boxplot based on the xScale 
   quantilesByGroups.forEach((quantiles, platform) => {
     const x = xScale(platform);
     const boxWidth = xScale.bandwidth();
 
-    // Draw vertical lines (whiskers)
+    // Draw vertical lines 
     svg.append('line')
       .attr('x1', x + boxWidth / 2)
       .attr('x2', x + boxWidth / 2)
