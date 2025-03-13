@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Homework 3 D3 part solution </title>
 </head>
 
 <body>
@@ -12,13 +14,18 @@
         <button class="headerButton" id='headerButton6'>More Info</button>
         <h1 id="about">Plots</h1>
     </div>
-    <br />
-    <div>
-        <h2>Side-by-Side Box Plot</h2>
-        <h2>Side-by-Side Bar Plot</h2>
-        <h2>Line Plot</h2>
-    </div>
 
+    <h1>Solution for the box-plot</h1>
+    <svg id="boxplot"></svg>
+
+    <h1>Solution for the side-by-side bar plot</h1>
+    <div id="barplot"></div>
+
+    <h1>Solution for the line plot</h1>
+    <div id="lineplot"></div>
+
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+    <script src='template.js'></script>
     <script>
         const navigateMoreButton = document.getElementById('headerButton6')
         navigateMoreButton.addEventListener('click', function () {
@@ -29,7 +36,6 @@
             window.location.href = 'aboutMe.html'
         })
     </script>
-
 </body>
 
 </html>
